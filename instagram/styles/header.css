@@ -80,3 +80,27 @@
     width: 24px;
     border-radius: 50%;
 }
+
+/* header__theme */
+.header__theme-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.header__theme-button-sun {
+    display: none;
+}
+
+.header__theme-button-moon {
+    display: unset;
+}
+
+/* Theme에 따라 icon 변경 */
+:root.darkTheme .header__theme-button-sun {
+    display: unset;
+}
+
+:root.darkTheme .header__theme-button-moon {
+    display: none;
+}
