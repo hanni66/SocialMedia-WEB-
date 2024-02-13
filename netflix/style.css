@@ -9,15 +9,16 @@ body {
 
 /* header */
 .navbar {
-    background-color: #111;
+    /* background-color: #111; */
     position: fixed;
     width: 100%;
-    top: 0;
+    top: 10;
     z-index: 10;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
+    margin-top: 20px;
 }
 
 .navbar ul {
@@ -41,15 +42,27 @@ body {
     color: gray;
 }
 
-
 .logo {
     height: 45px;
     width: 90px;
     display: flex;
     align-items: center;
+    margin-left: 10px;
 }
 
 .logo img {
+    width: 100%;
+}
+
+.user{
+    height: 45px;
+    width: 45px;
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.user img {
     width: 100%;
 }
 
@@ -61,7 +74,6 @@ body {
     height: 448px;
     color: white;
 }
-
 
 .banner_contents {
     margin-left: 30px;
@@ -80,15 +92,22 @@ body {
     margin-bottom: 10px;
 }
 
+.banner_btn button+button{
+    margin-left: 10px;
+}
+
 .banner_btn button {
-    width: 60px;
-    height: 30px;
+    width: 100px;
+    height: 35px;
     border-radius: 2px;
     border: 1px solid transparent;
+    background-color: rgba(171, 163, 163, 0.5);
+    color: #FFF;
 }
 
 .banner_btn button:hover {
-    background-color: rgb(171, 163, 163);
+    background-color: #FFF;
+    color: #111;
     cursor: pointer;
 }
 
